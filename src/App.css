@@ -47,8 +47,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%);
+  text-shadow: 1px #333;
 }
 
 body {
   background-color: mintcream;
+}
+
+.spinner-styling {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
 }

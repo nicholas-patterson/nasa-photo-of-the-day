@@ -1,8 +1,6 @@
 import React from "react";
 
 const VideoDetails = props => {
-  console.log(props);
-
   return (
     <div className="detail-styling">
       <h2>{props.details.title}</h2>

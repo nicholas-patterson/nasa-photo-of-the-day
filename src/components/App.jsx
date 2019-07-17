@@ -7,7 +7,6 @@ import VideoDetails from "./VideoDetails";
 
 function App() {
   const [picture, setPicture] = useState([]);
-
   const api_key = "b5zTGWrGAYLv64Pw6us1E07Gn5XDIRbiykVhGHQl";
 
   useEffect(() => {
@@ -26,5 +25,3 @@ function App() {
 }
 
 export default App;
-
-// b5zTGWrGAYLv64Pw6us1E07Gn5XDIRbiykVhGHQl
