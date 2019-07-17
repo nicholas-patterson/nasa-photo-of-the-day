@@ -23,7 +23,6 @@ function App() {
       <VideoDetails details={picture} />
     </div>
   );
-  console.log(picture);
 }
 
 export default App;

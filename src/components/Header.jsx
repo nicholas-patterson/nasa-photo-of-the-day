@@ -6,10 +6,10 @@ import Typography from "@material-ui/core/Typography";
 const Header = () => {
   return (
     <div>
-      <AppBar position="static" color="default">
+      <AppBar position="static" style={{ backgroundColor: "darkblue" }}>
         <Toolbar>
           <Typography variant="h6" color="inherit">
-            Nasa Photo Of The Day
+            NASA Photo Of The Day <span>🚀</span>
           </Typography>
         </Toolbar>
       </AppBar>
