@@ -32,10 +32,11 @@
   }
 }
 
-.main-container {
-  border: 1px solid black;
+.video-styling {
   margin: 0 auto;
-  width: 1000px;
-  background: #eee;
-  height: 700px;
+  box-shadow: 1px 1px 20px #333;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
 }

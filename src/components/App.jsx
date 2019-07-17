@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../../src/App.css";
 import Header from "./Header";
-import Picture from "./Picture";
+import Video from "./Video";
 import axios from "axios";
+import VideoDetails from "./VideoDetails";
 
 function App() {
   const [picture, setPicture] = useState([]);
@@ -15,10 +16,12 @@ function App() {
       .then(res => setPicture(res.data));
   }, []);
 
+  console.log(picture);
   return (
     <div className="App">
       <Header />
-      <Picture data={picture} />
+      <Video data={picture} />
+      {/* <VideoDetails details={picture} /> */}
     </div>
   );
 }
