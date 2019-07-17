@@ -16,14 +16,14 @@ function App() {
       .then(res => setPicture(res.data));
   }, []);
 
-  console.log(picture);
   return (
     <div className="App">
       <Header />
       <Video data={picture} />
-      {/* <VideoDetails details={picture} /> */}
+      <VideoDetails details={picture} />
     </div>
   );
+  console.log(picture);
 }
 
 export default App;

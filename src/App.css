@@ -40,3 +40,11 @@
   left: 50%;
   transform: translate(-50%);
 }
+
+.detail-styling {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
