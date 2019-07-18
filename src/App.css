@@ -31,3 +31,32 @@
     transform: rotate(360deg);
   }
 }
+
+.video-styling {
+  margin: 0 auto;
+  box-shadow: 1px 1px 20px #333;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.detail-styling {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  text-shadow: 1px #333;
+}
+
+body {
+  background-color: mintcream;
+}
+
+.spinner-styling {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
