@@ -4,6 +4,7 @@ import Header from "./Header";
 import Video from "./Video";
 import axios from "axios";
 import VideoDetails from "./VideoDetails";
+import { Card } from "semantic-ui-react";
 
 function App() {
   const [picture, setPicture] = useState([]);
@@ -19,8 +20,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Video data={picture} />
-      <VideoDetails details={picture} />
+      <Card>
+        <Video data={picture} />
+        <Card.Content>
+          <VideoDetails details={picture} />
+        </Card.Content>
+      </Card>
     </div>
   );
 }
