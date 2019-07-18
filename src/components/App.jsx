@@ -25,7 +25,7 @@ function App() {
   `;
 
   return (
-    <div className="App">
+    <div className="text-center">
       <Header />
       <CardStyles>
         <Card style={{ width: "100%" }}>
