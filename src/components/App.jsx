@@ -5,6 +5,7 @@ import Video from "./Video";
 import axios from "axios";
 import VideoDetails from "./VideoDetails";
 import { Card } from "semantic-ui-react";
+import styled from "styled-components";
 
 function App() {
   const [picture, setPicture] = useState([]);
@@ -16,16 +17,24 @@ function App() {
       .then(res => setPicture(res.data));
   }, []);
 
-  console.log(picture);
+  const CardStyles = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  `;
+
   return (
     <div className="App">
       <Header />
-      <Card>
-        <Video data={picture} />
-        <Card.Content>
-          <VideoDetails details={picture} />
-        </Card.Content>
-      </Card>
+      <CardStyles>
+        <Card style={{ width: "100%" }}>
+          <Video data={picture} />
+          <Card.Content>
+            <VideoDetails details={picture} />
+          </Card.Content>
+        </Card>
+      </CardStyles>
     </div>
   );
 }

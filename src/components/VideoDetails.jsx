@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Image } from "semantic-ui-react";
+import styled from "styled-components";
 
 const VideoDetails = props => {
   // return (
@@ -10,10 +11,25 @@ const VideoDetails = props => {
   //   </div>
   // );
 
+  const HeaderDiv = styled.div`
+    color: midnightblue;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  `;
+
+  const DescriptionDiv = styled.div`
+    color: #333;
+  `;
+
   return (
     <>
-      <Card.Header>{props.details.title}</Card.Header>
-      <Card.Description>{props.details.explanation}</Card.Description>
+      <HeaderDiv>
+        <Card.Header>{props.details.title}</Card.Header>
+      </HeaderDiv>
+      <DescriptionDiv>
+        <Card.Description>{props.details.explanation}</Card.Description>
+      </DescriptionDiv>
       <Card.Meta>{props.details.date}</Card.Meta>
     </>
   );
