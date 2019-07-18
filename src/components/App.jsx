@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "../../src/App.css";
+import "../../src/css/index.css";
 import Header from "./Header";
 import Video from "./Video";
 import axios from "axios";
 import VideoDetails from "./VideoDetails";
+import { Card } from "semantic-ui-react";
+import styled from "styled-components";
 
 function App() {
   const [picture, setPicture] = useState([]);
@@ -15,11 +17,24 @@ function App() {
       .then(res => setPicture(res.data));
   }, []);
 
+  const CardStyles = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  `;
+
   return (
-    <div className="App">
+    <div className="text-center">
       <Header />
-      <Video data={picture} />
-      <VideoDetails details={picture} />
+      <CardStyles>
+        <Card style={{ width: "100%" }}>
+          <Video data={picture} />
+          <Card.Content>
+            <VideoDetails details={picture} />
+          </Card.Content>
+        </Card>
+      </CardStyles>
     </div>
   );
 }
