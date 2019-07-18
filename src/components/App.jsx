@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../src/App.css";
+import "../../src/css/index.css";
 import Header from "./Header";
 import Video from "./Video";
 import axios from "axios";

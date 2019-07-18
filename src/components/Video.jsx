@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Card, Image } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 
 const Video = props => {
   console.log(props);
