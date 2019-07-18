@@ -15,6 +15,7 @@ function App() {
       .then(res => setPicture(res.data));
   }, []);
 
+  console.log(picture);
   return (
     <div className="App">
       <Header />
